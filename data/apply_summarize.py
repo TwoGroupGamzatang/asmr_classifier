@@ -1,7 +1,7 @@
 import pandas as pd
 from utils import summarize_text
 
-
+#전처리
 def preprocess(article_df, save_to_csv = False):
 
     article_df['summarized'] = None
