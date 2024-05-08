@@ -1,5 +1,6 @@
 from torch.utils.data import DataLoader, Dataset
 
+# 아티클 데이터셋
 class ArticleDataset(Dataset):
     def __init__(self, dataframe, tokenizer):
         self.data = dataframe
