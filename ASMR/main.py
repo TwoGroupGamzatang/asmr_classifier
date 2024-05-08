@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from model import ArticleClassifier, ArticleDataset
 from data import get_embedding
 
-# 장치 설정
+# 장치 설정(GPU)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
