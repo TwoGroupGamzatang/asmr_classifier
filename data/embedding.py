@@ -1,10 +1,12 @@
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder
 
+#날짜 전처리
 def extract_quarter(date_str):
     date = pd.to_datetime(date_str).normalize()
     return f"{date.year}Q{date.quarter}"
-
+    
+#원핫 인코딩
 def get_embedding(article_df):
     article_df['writedAt_n'] = article_df['writedAt'].apply(extract_quarter)
     article_df['scrapedAt_n'] = article_df['scrapedAt'].apply(extract_quarter)
