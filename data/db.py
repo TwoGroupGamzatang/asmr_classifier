@@ -1,6 +1,7 @@
 from pymongo import MongoClient
 import pandas as pd
 
+#DE에서 데이터 가져오기
 def getdata(url, save_to_csv=False):
     # MongoDB 클라이언트 
     client = MongoClient(url)
