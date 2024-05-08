@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 from transformers import BertModel
 
+#아티클 분류 모델
 class ArticleClassifier(nn.Module):
     def __init__(self, num_classes, num_date_features):
         super(ArticleClassifier, self).__init__()
